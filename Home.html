@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> DJS CodeStars</title>
+    <link rel="stylesheet" href="Home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Matemasie&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            background-image: url('https://media.tenor.com/53I_s_sx9ncAAAAM/black-space-stars.gif');
+            scroll-behavior: smooth;
+        }
+        h1 {
+            background-color: black;
+            color: white;
+            margin: 0;
+            font-size: 4rem; 
+            font-weight: 900;
+        }
+        .icon {
+            border-radius: 10px;
+            height: 50px;
+            width: auto;
+        }
+        h7 {
+            color: white;
+            font-weight: 900;
+            text-align: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .description {
+    position: relative;
+    margin-top: 150px;
+    margin-left: 23px;
+    margin-right: 23px;
+    text-align: center;
+    font-family: 'Matemasie';
+}
+
+.card-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.card {
+    width: 18rem;
+    margin-bottom: 20px;
+}
+
+.card.text-end {
+    text-align: center;
+}
+        h2 {
+            color: white;
+            margin-top: 40px;
+            font-size: 2.8rem;
+            font-weight: 400;
+            font-family: 'Matemasie';
+        }
+        .card-wrapper {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .card {
+            width: 18rem;
+        }
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000; 
+            background-color: black; 
+        }
+        .container-fluid {
+            display: flex;
+            justify-content: space-between; 
+            align-items: center;
+            padding: 0 15px;
+        }
+        .navbar-brand {
+            display: flex;
+            align-items: center;
+        }
+        .navbar-toggler {
+            color: white;
+            border: none;
+            background: none;
+            padding: 0;
+        }
+        .navbar-toggler:focus {
+            box-shadow: none;
+        }
+        .navbar-toggler-icon {
+            display: inline-block;
+            width: 30px; 
+            height: 21px; 
+            background: transparent; 
+            position: relative;
+        }
+        .navbar-toggler-icon::before,
+        .navbar-toggler-icon::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 3px;
+            background-color: white;
+            border-radius: 3px;
+            position: absolute;
+            left: 0;
+        }
+        .navbar-toggler-icon::before {
+            top: 0;
+        }
+        .navbar-toggler-icon::after {
+            bottom: 0; 
+        }
+        .navbar-toggler-icon span {
+            display: block;
+            width: 100%;
+            height: 3px;
+            background-color: white;
+            border-radius: 3px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .navbar-collapse {
+            position: absolute;
+            top: 100%;
+            right: 0;
+            background-color: black;
+            margin: 0;
+            max-width: 250px;
+        }
+        .navbar-nav {
+            display: flex;
+            align-items: center;
+            margin-top: 0; 
+        }
+        .navbar-nav .nav-link {
+            color: white;
+            transition: color 0.3s ease;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: 600;
+        }
+        .navbar-nav .nav-link:hover {
+            color: rgb(251,160,7);
+        }
+        .footer {
+        background-color: black;
+        color: white;
+        padding: 20px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: 600;
+        font-size: 0.9rem;
+        text-align: center;
+    }
+    .footer p {
+        margin: 10px 0;
+    }
+
+    .follow-us {
+        margin-top: 15px;
+    }
+
+    .follow-us a {
+        margin: 0 10px;
+        display: inline-block;
+    }
+
+    .icon {
+        width: 30px;
+        height: auto;
+    }
+    .follow-us a {
+    margin: 0 10px;
+    display: inline-block;
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.follow-us a:hover {
+    color: rgb(251,160,7);
+}
+
+
+        @media (max-width: 1200px) {
+            h1 {
+                font-size: 3.5rem;
+            }
+            .icon {
+                height: 45px;
+            }
+        }
+        @media (max-width: 992px) {
+            h1 {
+                font-size: 3rem;
+            }
+            .icon {
+                height: 40px;
+            }
+        }
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            .icon {
+                height: 35px;
+            }
+        }
+        @media (max-width: 576px) {
+            h1 {
+                font-size: 2rem;
+            }
+            .icon {
+                height: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-xxxl navbar-dark bg-black">
+        <div class="container-fluid d-flex align-items-center">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img class="icon me-2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcFtvXj0ET3BzkKRFlur7k-_fbm53K-nCpoA&s" alt="Logo">
+                <h1 class="mb-0">DJS CodeStars</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto" style="margin-right:15px;">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#about-card">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team-card">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#events-card">Events</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="description">
+            <h7>DJ Sanghvi's best Student Chapter for <span style="color: rgb(251,160,7)"> Competitive Programming</span>. We are a Community filled with <span style="color: rgb(251,160,7)">Programming </span>enthusiasts with an aim to spread knowledge about <span style="color: rgb(251,160,7)"> Competitive Programming</span> and taking this club to a global level</h7>
+            <h2><span style="color: rgb(251,160,7)"><del>Sky</del></span> CodeStars is the limit</h2>
+            <br><br>
+            <div class="card-wrapper">
+                <div id="about-card" class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title"><span style="color: rgb(251,160,7);">About us</span></h5>
+                        <p style="font-weight:600;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: white;" class="card-text">We are a Non-Profit Organization that connects Competitive Programmers all over the globe to each other</p>
+                        <a style="font-weight: 0;" href="#" class="btn btn-primary">Donate</a>
+                    </div>
+                </div>
+                <div id="team-card" class="card text-center mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: rgb(251,160,7);">Team</h5>
+                        <p class="card-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-weight:600;color:white ">We consist of 30 Core Comittee members and 50 Co-Comittee members from all over the globe</p>
+                        <a href="#team-card" class="btn btn-primary">Know More</a>
+                    </div>
+                </div>
+                <div id="events-card" class="card text-end mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title"  style="color: rgb(251,160,7); text-align: center;">Events</h5>
+                        <p class="card-text" style="text-align: center; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-weight:600; color:white ">We Conduct Hackathons that are famous all over the world like Code-Uncode 1.0</p>
+                        <a href="#events-card" class="btn btn-primary" style="display: flex;justify-content: center;">All Events</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container text-center">
+            <p>&copy; 2024 DJS CodeStars. All rights reserved.</p>
+            <p>Contact: 7021098200 | Email: shahjinang1109@gmail.com</p>
+            <p>Address: SVKM's Dwarkadas J. Sanghvi College of Engineering, Vile Parle West, Mumbai-400056</p>
+            <div class="follow-us">
+                <a href="https://www.instagram.com/djsce_codestars/" target="_blank" class="icon-link">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/company/djs-codestars/" target="_blank" class="icon-link">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+    </footer>    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="one.js"></script>
+</body>
+</html>
